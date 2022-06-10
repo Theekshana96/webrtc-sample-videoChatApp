@@ -3,8 +3,8 @@ const socket = require('socket.io');
 
 const app = express();
 
-const server = app.listen(8000, () => {
-  console.log('http://localhost:8000/');
+const server = app.listen(5000, () => {
+  console.log('http://localhost:5000/');
 });
 
 app.use(express.static('public'));
