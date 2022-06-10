@@ -12,7 +12,7 @@ app.use(express.static('public'));
 const io = socket(server);
 
 io.on('connection', (socket) => {
-  console.log(`User connected: ${socket.id}`);
+  console.log(`User is connected: ${socket.id}`);
 
   socket.on('join', (roomName) => {
     const rooms = io.sockets.adapter.rooms;
